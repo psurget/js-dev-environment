@@ -3,17 +3,23 @@
 
 <head>
     <meta charset="UTF-8" />
+    <script type="module" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <style>
+        @import "./node_modules/bootstrap/dist/css/bootstrap.css";
         @import "./src/style.css";
     </style>
     <title>JSDev</title>
 </head>
 
 <body>
-    <h1>This is a test.</h1>
-    <h2>No More Tests</h2>
-    <button type="button">Click Me!</button>
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1>This is a test.</h1>
+            </div>
+        </div>
+        <button id="result" type="button">Action</button>
+    </div>
     <script type="module">
         import "./src/index.js";
     </script>
